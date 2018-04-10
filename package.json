@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "build": "ng build --prod --env=test --base-href /eval/"
+    "build": "ng build --prod --env=prod --base-href /evaluation-cat/",
+    "deploy": "ngh --branch=gh-pages --repo=https://github.com/catwal/evaluation-cat.git",
+    "publish": "npm run build && npm run deploy"
   },
   "private": true,
   "dependencies": {
