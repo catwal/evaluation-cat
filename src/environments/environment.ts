@@ -5,5 +5,5 @@
 
 export const environment = {
 	production: false,
-	apiUrl: '/assets/data/poc.json'
+	apiUrl: './assets/data/poc.json'
 };
