@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 import { BehaviorSubject, Observable } from 'rxjs';
 
-import { environment as ENV } from '../environments/environment';
+import { environment as ENV } from '../environments/environment.prod';
 
 @Injectable()
 export class BookService {

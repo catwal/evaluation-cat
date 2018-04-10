@@ -7,6 +7,7 @@ import { BookService } from './book.service';
 	styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+	
 	books: Array<any>;
 	animate: boolean;
 
@@ -20,5 +21,6 @@ export class AppComponent {
 		this.bookService.list.subscribe((books) => {
 			this.books = books;
 		});
+		
 	}
 }
