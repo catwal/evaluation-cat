@@ -7,6 +7,7 @@ import { NgModule } from '@angular/core';
 
 import { BookService } from './book.service';
 import { AppComponent } from './app.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { AppComponent } from './app.component';
 	providers: [
 		BookService
 	],
-	bootstrap: [AppComponent]
+	bootstrap: [AppComponent],
+	schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
